@@ -1,5 +1,8 @@
 package com.example.sgbapi.dto;
 
+import lombok.Data;
+
+@Data
 public class LivroResponseDTO {
 
     private Long id;

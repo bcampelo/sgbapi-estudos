@@ -27,9 +27,13 @@ public class Livro {
     private String isbn;
 
     @Column(nullable = false)
+    private Integer anoPublicacao;
+
+    @Column(nullable = false)
     private Integer quantidadeDisponivel;
 
     @ManyToOne
     @JoinColumn(name = "categoria_id")
     private Categoria categoria;
+
 }
